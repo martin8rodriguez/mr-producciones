@@ -126,6 +126,16 @@
     flex-direction: row-reverse;
 }
 
+/**MAPS**/
+
+$colores:("color1":violet,"color2":black,"color3":white);
+    @each $nombre, $color in $colores{
+        .btn-#{$nombre}{
+            background-color: $color;
+        }
+}
+
+
 /**Fin SERVICIOS**/
 
 

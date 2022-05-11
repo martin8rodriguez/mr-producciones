@@ -129,7 +129,11 @@ header {
 .contenedor__index {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header header header" "div div div div div" "section section section section section" "aside aside aside aside aside" "footer footer footer footer footer";
+  grid-template-areas: "header header header header header"
+ "div div div div div"
+ "section section section section section"
+ "aside aside aside aside aside"
+ "footer footer footer footer footer";
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -371,7 +375,9 @@ header {
 .contenedor__servicios {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header" "section section section" "footer footer footer";
+  grid-template-areas: "header header header"
+ "section section section"
+ "footer footer footer";
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: repeat(3, 1fr); }
 
@@ -450,7 +456,7 @@ header {
   text-transform: uppercase;
   color: white;
   text-shadow: 3px 2px 1px black;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.938) 2%, #460258 40%, #ce6be9);
+  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.938) 2%, #460258 40%, #ce6be9); */
   display: inline;
   border-radius: 10px;
   border: none;
@@ -468,6 +474,16 @@ header {
   margin-top: 50px;
   display: flex;
   flex-direction: row-reverse; }
+
+/**MAPS**/
+.btn-color1 {
+  background-color: violet; }
+
+.btn-color2 {
+  background-color: black; }
+
+.btn-color3 {
+  background-color: white; }
 
 /**Fin SERVICIOS**/
 /**Comienza MULTIMEDIA**/
@@ -563,7 +579,10 @@ header {
 .contenedor__biografia {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header" "section section section" "div div div" "footer footer footer "; }
+  grid-template-areas: "header header header"
+ "section section section"
+ "div div div"
+ "footer footer footer "; }
 
 .contenedor__biografia iframe {
   margin: 10px; }
@@ -583,7 +602,9 @@ header {
   background-repeat: repeat;
   background-blend-mode: overlay;
   display: grid;
-  grid-template-areas: "header" "section" "footer"; }
+  grid-template-areas: "header"
+ "section"
+ "footer"; }
 
 .section__formulario {
   width: 100%;
@@ -649,7 +670,9 @@ header {
 /**Comienza ASISTENCIA-PREGUNTAS**/
 .contenedor__asistencia {
   display: grid;
-  grid-template-areas: "header header header" "section section section" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "section section section"
+ "footer footer footer"; }
 
 .asistencia__frecuentes {
   margin: 15px;
