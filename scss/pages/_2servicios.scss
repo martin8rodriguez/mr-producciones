@@ -56,17 +56,7 @@
     
 }
 
-.servicios__produccion{
-    background-color: black;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-}
 
-.servicios__img{
-    border-radius: 10px;
-    height: 300px;
-}
 .servicios__produccion__texto{
     font-size: 2rem;
     margin: 20px;
@@ -119,12 +109,7 @@
     transition: 0.2s;
 }
 
-.servicios__beatmaker{
-    background-color: black;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row-reverse;
-}
+
 
 /**MAPS**/
 
@@ -135,7 +120,34 @@ $colores:("color1":violet,"color2":black,"color3":white);
         }
 }
 
+/**EXTEND**/
 
+.extend{
+    background-color: black;
+    margin-top: 50px;
+    display: flex;
+}
+
+.servicios__produccion{
+    @extend .extend;
+    flex-direction: row;
+}
+
+
+.servicios__beatmaker{
+    @extend .extend;
+    flex-direction: row-reverse;
+}
+
+/**MIXIN**/
+@mixin formatter($borde,$alto){
+    border-radius: $borde;
+    height: $alto;
+}
+
+.servicios__img{
+    @include formatter(10px, 300px);
+}
 /**Fin SERVICIOS**/
 
 
