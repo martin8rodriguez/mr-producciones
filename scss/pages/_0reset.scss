@@ -25,7 +25,6 @@ header{
 }
 
 .header__menu{
-    margin: auto;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -156,4 +155,18 @@ header{
     transition: 0.2s;
 }
 
+
 /**Fin HEADER-NAV-FOOTER**/
+
+$color1: #460258;
+$color2: #a655bd;
+
+/**EXTENDS**/
+
+.boxshadow{
+    box-shadow: 2px 2px 6px 2px #a655bd;
+}
+
+.gradiente{
+    background-image: linear-gradient(to bottom, #a655bd 2%, #460258 10% , black 50%, #460258 90%, #a655bd 99%  );
+}

@@ -2,14 +2,31 @@
 
 /**Comienza BIOGRAFIA**/
 
+/**EXTENDS**/
+
+.textoBio{
+    color: white;
+    font-size: 2rem;
+    margin: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px black;
+}
+
+
 .contenedor__biografia{
     height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "section section section"
-    "div div div"
-    "footer footer footer ";
+    display: flex;
+    flex-direction: column;
+
+    h4{
+        @extend .textoBio;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    p{
+        @extend .textoBio;
+    }
 }
 
 .contenedor__biografia iframe{
@@ -23,6 +40,49 @@
     text-align: justify;
 }
 
+.div__multimedia1{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
 
+    img{
+        width: 40%;
+        border-radius:15px;
+        padding: 5px; 
+        backdrop-filter: blur(10px);
+    }
+
+    iframe{
+        border-radius: 15px;
+    }
+
+}
+
+.div__multimedia2{
+    display: flex;
+    flex-direction: row;
+
+    img{
+        width: 40%;
+        border-radius:15px;
+        padding: 5px; 
+        backdrop-filter: blur(10px);
+    }
+}
+
+.bio__premios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li{
+        @extend .textoBio;
+        font-size: 2rem;
+        text-align: center;
+
+    }
+}
 
 /**Fin BIOGRAFIA**/
+

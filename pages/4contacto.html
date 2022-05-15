@@ -8,6 +8,7 @@
     <meta name="description" content="Nuestro equipo te espera para responder todas tus preguntas ">
     <meta name="keywords" content="musica, producciones, beatmaker, mezcla, audio, estudio, grabacion, pistas, karaoke, teatromusical, partituras, transcripciones">
     <link rel="shortcut icon" href="images/Favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/stylees.css">
 </head>
 
@@ -56,10 +57,10 @@
         </header><!--Cierra Navegador-->  
 
 
-        <section class="section__formulario">
+        <section class="section__formulario" >
             <h1 class="tituloPagina index__servicios__titulo">Contacto</h1>
             <p>¡Hola, por favor dejanos tus datos de contacto y consulta. Te responderemos en la brevedad!</p>
-            <form action=""> <!--Abre Formulario de Contacto-->
+            <form action="" data-aos="zoom-in"> <!--Abre Formulario de Contacto-->
                 <fieldset class="fieldset">
                     <legend class="legend__formulario"> Formulario de contacto</legend>
                     <div class="div__formulario">
@@ -76,7 +77,7 @@
                                 <input type="radio" name="sexo" checked> Otro
                             </div>
                         <label for="servicio">Servicio a consultar</label>
-                        <select name="servicio" >
+                        <select class="select" name="servicio" >
                             <option value="">Producción Musical</option>
                             <option value="">Mezcla de Audio</option>
                             <option value="">Pista a pedido</option>
@@ -85,9 +86,12 @@
                             <option value="">Transcripción a Partitura</option>
                             <option value="">Transcripción a MIDI</option>
                         </select>
-                        <textarea name="mensaje" placeholder="Deje su consulta aquí"></textarea>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
+                        <textarea class="consulta__textarea" name="mensaje" placeholder="Deje su consulta aquí"></textarea>
+
+                        <div class="consulta__botones"> 
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </div>
                     </div>
                 </fieldset>
             </form><!--Cierra Formulario de Contacto-->
@@ -125,9 +129,13 @@
                 <iframe class="footer__mapa__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4780.243723887978!2d-58.468614396782094!3d-34.60627025416889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ff31821b9b%3A0xfb2148a7ccff1341!2sAlejandro%20Magari%C3%B1os%20Cervantes%20%26%20Manuel%20Ricardo%20Trelles%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1648910912915!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
             </div>
-            <p> ™ Todos los derechos reservados. 2022. Diseño Web por<a href="pages/3biografia.html">Martín Rodríguez</a></p>
+            <p> ™ Todos los derechos reservados. 2022. Diseño Web por<a href="../pages/3biografia.html">Martín Rodríguez</a></p>
         </footer> <!-- Cierra Footer-->     
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body> 
 
 </html>
