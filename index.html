@@ -7,7 +7,7 @@
     <title>MRproducciones</title>
     <meta name="description" content="Ofrecemos soluciones artísticas para todo tipo de proyectos y contenido relacionado con la Música. ">
     <meta name="keywords" content="musica, producciones, beatmaker, mezcla, audio, estudio, grabacion, pistas, karaoke, teatromusical, partituras, transcripciones">
-    <link rel="shortcut icon" href="images/Favicon.png">    
+    <link rel="shortcut icon" href="images/Favicon2.png">    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/stylees.css">
 </head>
@@ -15,7 +15,7 @@
 
 <body class="contenedor2">
     <div class="contenedor__index">
-        <header>   
+        <header class="header__padre">   
             <div class="header__menu">
                 <a href="index.html"><img class="imgLogo" src="images/LOGO2.png" alt="logo"></a>
 
@@ -66,28 +66,28 @@
         
         <Section class="index__section"> <!--Abre Boxes Servicios en Index--> 
             <h1><a class="index__servicios__titulo" href="pages/1servicios.html"> Servicios</a></h1>
-            <input class="btn__radio" type="radio" name="dot" id="one">
+            <input class="btn__radio" type="radio" name="dot" id="one" checked>
             <input class="btn__radio" type="radio" name="dot" id="two">
             <div class="index__servicios">
-                <div class="index__servicios__box" >
+                <div id="mediaProdu" class="index__servicios__box" >
                     <h2 class="index__servicios__h2">Producción Musical</h2>
                     <img class="index__servicios__img" src="images/index/servicio_prod.jpg" alt="img.Producción Musical">
                     <p>Supervisión y Dirección en las etapas de Pre y Post producción de audio.</p>
                     <a href="pages/1servicios.html#produccion"><input class="index__servicios__boton" type="button" value="LEER MÁS..."></a>
                 </div>
-                <div class="index__servicios__box">
+                <div id="mediaBeat" class="index__servicios__box">
                     <h2 class="index__servicios__h2">Beatmaker</h2>
                     <img class="index__servicios__img" src="images/index/servicios_beat.jpg" alt="img.Beatmaker">
                     <p>Creación de Beat Original desde cero, con todos sus elementos. (Ritmo, armonía y melodía). </p>
                     <a href="pages/1servicios.html#beatmaker"><input class="index__servicios__boton" type="button" value="LEER MÁS..."></a> 
                 </div>
-                <div class="index__servicios__box">
+                <div id="mediaMezcla" class="index__servicios__box">
                     <h2 class="index__servicios__h2">Mezcla de Audio</h2>
                     <img class="index__servicios__img" src="images/index/servicios_mezcla.jpg" alt="img.Mezcla">
                     <p>Mezcla "In The Box" con Plug-ins de primer nivel.</p>
                     <a href="pages/1servicios.html#mezcla"><input class="index__servicios__boton" type="button" value="LEER MÁS..."></a>
                 </div>
-                <div class="index__servicios__box">
+                <div id="mediaPista" class="index__servicios__box">
                     <h2 class="index__servicios__h2">Pista a pedido</h2>
                     <img class="index__servicios__img" src="images/index/servicios_pista.jpg" alt="img.Pista a pedido">
                     <p>¿Necesitas una Pista Karaoke especifica y no la encontrás por ningún lado? La hacemos por vos, lo más cercano al Track Original.</p>
@@ -105,13 +105,13 @@
                     <p>Editamos y revivimos Audio con dificultades técnicas (ruidos de fondo, calidez, etc ) </p>
                     <a href="pages/1servicios.html#restauracion"><input class="index__servicios__boton" type="button" value="LEER MÁS..."></a>
                 </div>
-                <div id="mediaTrans" class="index__servicios__box">
+                <div id="mediaTrans" class="index__servicios__box" data-aos="fade-right">
                     <h2 class="index__servicios__h2">Transcripción a Partitura</h2>
                     <img class="index__servicios__img" src="images/index/servicios_partitura.jpg" alt="img.Transcripción a Partitura">
                     <p>Transcribimos Audios a partitura de cualquier instrumento y género. Ideal para registros (Chords + Lead Vocal)</p>
                     <a href="pages/1servicios.html#partitura"><input class="index__servicios__boton" type="button" value="LEER MÁS..."></a>
                 </div>
-                <div id="mediaMIDI" class="index__servicios__box">
+                <div id="mediaMIDI" class="index__servicios__box" data-aos="fade-right">
                     <h2 class="index__servicios__h2">Transcripción a MIDI</h2>
                     <img class="index__servicios__img" src="images/index/servicios_midi.jpg" alt="img.Transcripción a MIDI">
                     <p>Transcribimos Audio o Partitura a archivo MIDI.</p>
@@ -128,7 +128,8 @@
             <div class="botonSlider">
                 <label for="one"class="one"></label>
                 <label for="two"class="two"></label>
-            </div>    
+            </div>   
+            <a href="pages/1servicios.html"><p class="masServicios">¡Ver más servicios! </p> </a>
         </Section><!--Cierra Boxes Servicios en Index-->
 
         <div class="index__clientes">
@@ -164,7 +165,7 @@
         <aside class="aside"><!--Breve Biografía-->
             <h2 class="index__servicios__titulo">Un poco de historia...</h2>
             <p>"Martín Rodríguez nació en Buenos Aires, Argentina, el 27 de Marzo de 1990. Desde la temprana edad de los 11 años comenzó su vínculo con la Música a travéz de su actual instrumento principal: La Guitarra".</p>
-            <p>"Desde entonces se desarrolla como Productor, Compositor, Director, Intérprete e Instrumentista".</p>
+            <p>"Desde entonces se desarrolla como Productor, Compositor, Director Musical, Intérprete e Instrumentista".</p>
             <a  href="pages/3biografia.html"><input class="aside__boton" type="button" value="LEER MÁS..."></a>
         </aside>
 

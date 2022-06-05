@@ -33,8 +33,10 @@ header{
 }
 
 .imgLogo{
-    width: 150px;
+    width: 200px;
     padding: 2px;
+    border: 2px solid $color1;
+    border-radius: 10px;
 }
 
 

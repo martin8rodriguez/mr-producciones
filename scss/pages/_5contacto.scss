@@ -73,11 +73,10 @@ $colorContacto:#e27bff;
 }
 
 .div__formulario input{
-    background-color: #e27bff;
+    background-color: white;
     padding: 5px;
     font-size: 1.5rem;
-    color: white;
-    text-shadow: 2px 2px 2px black;
+    color: black;
     border-radius: 10px;
 }
 
@@ -95,10 +94,9 @@ $colorContacto:#e27bff;
 }
 
 .select {
-    background-color: $colorContacto;
+    background-color: white;
     font-size: 1.5rem;
-    color: white;
-    text-shadow: 2px 2px 2px black;
+    color: black;
     padding: 5px;
     border-radius: 10px;
 
@@ -109,8 +107,8 @@ $colorContacto:#e27bff;
 .consulta__textarea{
     margin-top: 20px;
     height: 100px;
-    background-color: $colorContacto;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 10px;
 }
 
@@ -122,6 +120,7 @@ $colorContacto:#e27bff;
     
 
     input{
+        background-color: $color2;
         margin: 20px ;
         padding: 15px;
         border-radius: 10px;

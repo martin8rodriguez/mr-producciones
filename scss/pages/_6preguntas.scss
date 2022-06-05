@@ -17,11 +17,18 @@
 }
 
 .asistencia__div{
+    height: 400px;
     padding: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    background-color: black;
+        a{
+            color: white;
+            font-size: 1.5rem;
+        }
 }
 
 .asistencia__div h3{
@@ -42,7 +49,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: left;   
 }
 
@@ -58,7 +65,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: left;
 }
 

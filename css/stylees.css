@@ -27,8 +27,10 @@ header {
   align-items: center; }
 
 .imgLogo {
-  width: 150px;
-  padding: 2px; }
+  width: 200px;
+  padding: 2px;
+  border: 2px solid #460258;
+  border-radius: 10px; }
 
 .header__redes a {
   color: white;
@@ -203,15 +205,24 @@ footer {
   box-shadow: 1px 1px 4px 10px #ce6be9; }
 
 .index__servicios {
-  width: 200%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   transition: all 1s ease; }
 
-#two:checked ~ .index__servicios {
-  margin-left: -100%; }
+#two:checked ~ .index__servicios #mediaProdu {
+  display: none; }
+
+#two:checked ~ .index__servicios #mediaBeat {
+  display: none; }
+
+#two:checked ~ .index__servicios #mediaMezcla {
+  display: none; }
+
+#two:checked ~ .index__servicios #mediaPista {
+  display: none; }
 
 .index__servicios__box {
   justify-content: space-evenly;
@@ -276,12 +287,15 @@ footer {
   justify-content: center; }
 
 .botonSlider label {
-  height: 15px;
-  width: 15px;
+  height: 30px;
+  width: 60px;
   background: white;
   margin: 0 4px;
   border-radius: 20px;
+  border: 1px solid white;
   transition: all 0.5s ease; }
+  .botonSlider label:hover {
+    background: #a655bd; }
 
 .botonSlider label.active {
   width: 35px; }
@@ -300,6 +314,29 @@ footer {
 
 #masServicios {
   display: none; }
+
+#one:checked ~ .index__servicios #mediaCompo {
+  display: none; }
+
+#one:checked ~ .index__servicios #mediaRestaura {
+  display: none; }
+
+#one:checked ~ .index__servicios #mediaTrans {
+  display: none; }
+
+#one:checked ~ .index__servicios #mediaMIDI {
+  display: none; }
+
+.btn__radio {
+  display: none; }
+
+.masServicios {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  transition: 0.5s; }
+  .masServicios:hover {
+    text-shadow: 2px 2px black; }
 
 .index__clientes {
   margin-top: 20px;
@@ -358,11 +395,11 @@ footer {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  background-image: url(../images/index/2.jpg);
-  background-attachment: fixed;
+  background-image: url(../images/index/bio__index2C.png);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: gray;
+  background-attachment: fixed;
   text-align: center; }
   .aside p {
     color: white;
@@ -436,13 +473,25 @@ footer {
   text-shadow: 1px 3px 7px #ce6be9;
   transition: 0.2s; }
 
+.servicios__divImg {
+  height: 100%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center; }
+
 .servicios__produccion__texto {
   font-size: 2rem;
   margin: 20px;
   width: 100%;
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
   color: white; }
+  .servicios__produccion__texto ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .servicios__produccion__texto li {
+    text-align: justify;
+    font-size: 1.5rem; }
 
 .serviciosH2 {
   margin: auto;
@@ -507,14 +556,14 @@ footer {
 /**MIXIN**/
 .servicios__img {
   border-radius: 10px;
-  height: 300px; }
+  height: 250px; }
 
-.flexrow, .div__clientes {
+.flexrow, .div__clientes, .div_videoBio {
   width: 100%;
   display: flex;
   flex-direction: row; }
 
-.flexcol, .index__section, .index__servicios__box {
+.flexcol, .index__section, .index__servicios__box, .servicios__divImg, .servicios__produccion__texto {
   display: flex;
   flex-direction: column; }
 
@@ -532,7 +581,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   font-style: italic;
   margin: 76px 0 15px 0;
@@ -581,7 +630,7 @@ footer {
   justify-content: space-evenly;
   background-color: black; }
 
-.multimedia__boxProduccion, .multimedia__boxProduccion1, .multimedia__boxProduccion2, .multimedia__boxProduccion3, .multimedia__boxProduccion4, .multimedia__boxbeat1, .multimedia__boxbeat2, .multimedia__boxbeat3, .multimedia__boxMezcla1, .multimedia__boxMezcla2, .multimedia__boxMezcla3, .multimedia__boxPista1, .multimedia__boxPista2, .multimedia__boxPista3, .multimedia__boxCompo1, .multimedia__boxCompo2, .multimedia__boxCompo3 {
+.multimedia__boxProduccion, .multimedia__boxProduccion1, .multimedia__boxProduccion2, .multimedia__boxProduccion3, .multimedia__boxProduccion4, .multimedia__boxbeat1, .multimedia__boxbeat2, .multimedia__boxbeat3, .multimedia__boxMezcla1, .multimedia__boxMezcla2, .multimedia__boxMezcla3, .multimedia__boxPista1, .multimedia__boxPista2, .multimedia__boxPista3, .multimedia__boxCompo1, .multimedia__boxCompo2, .multimedia__boxCompo3, .multimedia__boxParte1, .multimedia__boxParte2, .multimedia__boxParte3 {
   height: 100%;
   width: 300px;
   margin: 20px;
@@ -595,17 +644,18 @@ footer {
   align-items: center;
   background-image: url(../../images/index/servicio_prod.jpg);
   background-size: cover; }
-  .multimedia__boxProduccion ul, .multimedia__boxProduccion1 ul, .multimedia__boxProduccion2 ul, .multimedia__boxProduccion3 ul, .multimedia__boxProduccion4 ul, .multimedia__boxbeat1 ul, .multimedia__boxbeat2 ul, .multimedia__boxbeat3 ul, .multimedia__boxMezcla1 ul, .multimedia__boxMezcla2 ul, .multimedia__boxMezcla3 ul, .multimedia__boxPista1 ul, .multimedia__boxPista2 ul, .multimedia__boxPista3 ul, .multimedia__boxCompo1 ul, .multimedia__boxCompo2 ul, .multimedia__boxCompo3 ul {
+  .multimedia__boxProduccion ul, .multimedia__boxProduccion1 ul, .multimedia__boxProduccion2 ul, .multimedia__boxProduccion3 ul, .multimedia__boxProduccion4 ul, .multimedia__boxbeat1 ul, .multimedia__boxbeat2 ul, .multimedia__boxbeat3 ul, .multimedia__boxMezcla1 ul, .multimedia__boxMezcla2 ul, .multimedia__boxMezcla3 ul, .multimedia__boxPista1 ul, .multimedia__boxPista2 ul, .multimedia__boxPista3 ul, .multimedia__boxCompo1 ul, .multimedia__boxCompo2 ul, .multimedia__boxCompo3 ul, .multimedia__boxParte1 ul, .multimedia__boxParte2 ul, .multimedia__boxParte3 ul {
     width: 100%;
     margin: 10px; }
-    .multimedia__boxProduccion ul li, .multimedia__boxProduccion1 ul li, .multimedia__boxProduccion2 ul li, .multimedia__boxProduccion3 ul li, .multimedia__boxProduccion4 ul li, .multimedia__boxbeat1 ul li, .multimedia__boxbeat2 ul li, .multimedia__boxbeat3 ul li, .multimedia__boxMezcla1 ul li, .multimedia__boxMezcla2 ul li, .multimedia__boxMezcla3 ul li, .multimedia__boxPista1 ul li, .multimedia__boxPista2 ul li, .multimedia__boxPista3 ul li, .multimedia__boxCompo1 ul li, .multimedia__boxCompo2 ul li, .multimedia__boxCompo3 ul li {
+    .multimedia__boxProduccion ul li, .multimedia__boxProduccion1 ul li, .multimedia__boxProduccion2 ul li, .multimedia__boxProduccion3 ul li, .multimedia__boxProduccion4 ul li, .multimedia__boxbeat1 ul li, .multimedia__boxbeat2 ul li, .multimedia__boxbeat3 ul li, .multimedia__boxMezcla1 ul li, .multimedia__boxMezcla2 ul li, .multimedia__boxMezcla3 ul li, .multimedia__boxPista1 ul li, .multimedia__boxPista2 ul li, .multimedia__boxPista3 ul li, .multimedia__boxCompo1 ul li, .multimedia__boxCompo2 ul li, .multimedia__boxCompo3 ul li, .multimedia__boxParte1 ul li, .multimedia__boxParte2 ul li, .multimedia__boxParte3 ul li {
       width: 100%;
       color: white;
       font-size: 2rem;
       text-align: justify;
       margin: 5px;
       text-shadow: 1px 1px 0.5px black;
-      text-align: center; }
+      text-align: center;
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; }
 
 .multimedia__boxProduccion1 {
   background-image: url(../../images/multimedia/arrebato.jpg); }
@@ -652,6 +702,42 @@ footer {
 .multimedia__boxCompo3 {
   background-image: url(../../images/multimedia/arrebato.jpg); }
 
+.multimedia__boxParte1 {
+  background-image: url(../../audio/Partituras/CantarParte.png);
+  height: 200px;
+  background-size: cover; }
+  .multimedia__boxParte1:hover {
+    width: 50%;
+    height: 400px;
+    background-attachment: scroll;
+    transition: 0.3s; }
+    .multimedia__boxParte1:hover ul li {
+      display: none; }
+
+.multimedia__boxParte2 {
+  background-image: url(../../audio/Partituras/feParte.png);
+  height: 200px;
+  background-size: cover; }
+  .multimedia__boxParte2:hover {
+    width: 50%;
+    height: 400px;
+    background-attachment: scroll;
+    transition: 0.3s; }
+    .multimedia__boxParte2:hover ul li {
+      display: none; }
+
+.multimedia__boxParte3 {
+  background-image: url(../../audio/Partituras/VocacionParte.png);
+  height: 200px;
+  background-size: cover; }
+  .multimedia__boxParte3:hover {
+    width: 50%;
+    height: 400px;
+    background-attachment: scroll;
+    transition: all 0.3s; }
+    .multimedia__boxParte3:hover ul li {
+      display: none; }
+
 .imgBoxMultimedia {
   margin-top: 20px;
   border-radius: 15px; }
@@ -666,7 +752,7 @@ footer {
 /**Fin MULTIMEDIA**/
 /**Comienza BIOGRAFIA**/
 /**EXTENDS**/
-.textoBio, .contenedor__biografia h4, .contenedor__biografia p, .bio__premios li {
+.textoBio, .contenedor__biografia h4, .pBio, .bio__premios li {
   color: white;
   font-size: 2rem;
   margin: 20px;
@@ -686,21 +772,42 @@ footer {
 
 .biografia__texto {
   color: white;
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin: 20px;
   text-align: justify; }
+
+.div__multimedia0 {
+  display: flex;
+  flex-direction: row;
+  height: 400px; }
+  .div__multimedia0 img {
+    width: 30%;
+    border-radius: 15px;
+    padding: 5px;
+    backdrop-filter: blur(10px); }
+  .div__multimedia0 iframe {
+    border-radius: 15px; }
 
 .div__multimedia1 {
   display: flex;
   flex-direction: row;
   height: 400px; }
   .div__multimedia1 img {
-    width: 40%;
+    width: 30%;
     border-radius: 15px;
     padding: 5px;
     backdrop-filter: blur(10px); }
   .div__multimedia1 iframe {
     border-radius: 15px; }
+
+.div_videoBio {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  align-items: center; }
+
+.videoBio {
+  border-radius: 15px; }
 
 .div__multimedia2 {
   display: flex;
@@ -779,11 +886,10 @@ footer {
   display: block; }
 
 .div__formulario input {
-  background-color: #e27bff;
+  background-color: white;
   padding: 5px;
   font-size: 1.5rem;
-  color: white;
-  text-shadow: 2px 2px 2px black;
+  color: black;
   border-radius: 10px; }
 
 .formulario__sexo {
@@ -797,18 +903,17 @@ footer {
     margin: 5px; }
 
 .select {
-  background-color: #e27bff;
+  background-color: white;
   font-size: 1.5rem;
-  color: white;
-  text-shadow: 2px 2px 2px black;
+  color: black;
   padding: 5px;
   border-radius: 10px; }
 
 .consulta__textarea {
   margin-top: 20px;
   height: 100px;
-  background-color: #e27bff;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 10px; }
 
 .consulta__botones {
@@ -817,6 +922,7 @@ footer {
   justify-content: center;
   align-items: center; }
   .consulta__botones input {
+    background-color: #a655bd;
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
@@ -841,11 +947,17 @@ footer {
   text-align: center; }
 
 .asistencia__div {
+  height: 400px;
   padding: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   color: white;
-  font-size: 1.5rem; }
+  font-size: 1.7rem;
+  background-color: black; }
+  .asistencia__div a {
+    color: white;
+    font-size: 1.5rem; }
 
 .asistencia__div h3 {
   background-color: #791a94;
@@ -863,7 +975,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: left; }
 
 .asistencia__politicas {
@@ -877,7 +989,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: left; }
 
 /**Fin ASISTENCIA-PREGUNTAS**/
@@ -926,6 +1038,8 @@ footer {
     align-items: center; }
     .index__servicios .index__servicios__box p {
       font-size: 2rem; }
+  .masServicios {
+    display: none; }
   #mediaCompo {
     display: none; }
   #mediaRestaura {
@@ -955,9 +1069,17 @@ footer {
     display: none; }
   /**FIN INDEX MEDIAS QUERIES**/
   /**PRINCIPIO SERVICIOS MEDIAS QUERIES**/
+  .tituloPagina {
+    margin-top: 100px; }
+  .header__padre {
+    width: 368px; }
+  .nav ul {
+    display: flex;
+    flex-direction: column; }
   .contenedor__servicios {
     width: 100%; }
   .header__menu {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
@@ -983,6 +1105,8 @@ footer {
   .servicios__beatmaker {
     display: flex;
     flex-direction: column; }
+  #part {
+    display: none; }
   /**FIN SERVICIOS MEDIAS QUERIES**/
   /**PRINCIPIO MULTIMEDIA MEDIAS QUERIES**/
   .section__multimedia {
@@ -1010,10 +1134,21 @@ footer {
     align-items: center; }
   /**FIN MULTIMEDIA MEDIAS QUERIES**/
   /**PRINCIPIO BIOGRAFIA MEDIAS QUERIES**/
-  .div__multimedia1 {
+  .contenedor__biografia {
+    display: flex;
+    flex-direction: column; }
+  .div__multimedia0 {
     display: flex;
     flex-direction: column;
     margin-bottom: 310px; }
+    .div__multimedia0 img {
+      width: 100%; }
+    .div__multimedia0 iframe {
+      width: 100%; }
+  .div__multimedia1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 110px; }
     .div__multimedia1 img {
       width: 100%; }
     .div__multimedia1 iframe {
@@ -1023,5 +1158,5 @@ footer {
     flex-direction: column; }
     .div__multimedia2 img {
       width: 100%; }
-  .bio__premios {
+  .div_videoBio {
     display: none; } }

@@ -51,14 +51,35 @@
     
 }
 
+.servicios__divImg{
+    height: 100%;
+    padding: 15px;
+    @extend .flexcol;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .servicios__produccion__texto{
     font-size: 2rem;
     margin: 20px;
     width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    @extend .flexcol;
     color: white;
+
+
+        ul{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li{
+            text-align: justify;
+            font-size: 1.5rem;
+            
+        }
 }
 
 .serviciosH2{
@@ -75,7 +96,9 @@
 
 .serviciosParrafo{
     margin: 10px;
+
 }
+
 
 .servicios__divBoton{
     display: flex;
@@ -141,7 +164,7 @@ $colores:("color1":violet,"color2":black,"color3":white);
 }
 
 .servicios__img{
-    @include formatter(10px, 300px);
+    @include formatter(10px, 250px);
 }
 
 .flexrow{

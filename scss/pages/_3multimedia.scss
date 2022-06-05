@@ -16,7 +16,7 @@
     text-transform: uppercase;
 
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
     margin: 76px 0 15px 0; 
@@ -102,7 +102,11 @@
             text-align: justify;
             margin: 5px;
             text-shadow: 1px 1px 0.5px black;
-            text-align: center
+            text-align: center;
+            text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
         }       
     }
 }
@@ -191,6 +195,60 @@
 .multimedia__boxCompo3{
     @extend .multimedia__boxProduccion;
     background-image: url(../../images/multimedia/arrebato.jpg);
+}
+
+.multimedia__boxParte1{
+    @extend .multimedia__boxProduccion;
+    background-image: url(../../audio/Partituras/CantarParte.png);
+    height: 200px;
+    background-size: cover;
+    
+        
+        &:hover {
+            width: 50%;
+            height: 400px;
+            background-attachment: scroll;
+            transition: 0.3s;
+                ul li{
+                    display: none;
+                }
+        }
+
+}
+
+.multimedia__boxParte2{
+    @extend .multimedia__boxProduccion;
+    background-image: url(../../audio/Partituras/feParte.png);
+    height: 200px;
+    background-size: cover;
+    
+        
+        &:hover {
+            width: 50%;
+            height: 400px;
+            background-attachment: scroll;
+            transition: 0.3s;
+                ul li{
+                    display: none;
+                }
+        }
+}
+
+.multimedia__boxParte3{
+    @extend .multimedia__boxProduccion;
+    background-image: url(../../audio/Partituras/VocacionParte.png);
+    height: 200px;
+    background-size: cover;
+        &:hover {
+            width: 50%;
+            height: 400px;
+            background-attachment: scroll;
+            transition: all 0.3s;
+            
+                ul li{
+                    display: none;
+                }
+        }
 }
 
 .imgBoxMultimedia{
