@@ -200,7 +200,7 @@
 
 .multimedia__boxParte1{
     @extend .multimedia__boxProduccion;
-    background-image: url(../audio/Partituras/CantarParte.png);
+    background-image: url(../images/index/CantarParte.png);
     height: 200px;
     background-size: cover;
     
@@ -219,7 +219,7 @@
 
 .multimedia__boxParte2{
     @extend .multimedia__boxProduccion;
-    background-image: url(../audio/Partituras/feParte.png);
+    background-image: url(../images/index/feParte.png);
     height: 200px;
     background-size: cover;
     
@@ -237,7 +237,7 @@
 
 .multimedia__boxParte3{
     @extend .multimedia__boxProduccion;
-    background-image: url(../audio/Partituras/VocacionParte.png);
+    background-image: url(../images/index/VocacionParte.png);
     height: 200px;
     background-size: cover;
         &:hover {

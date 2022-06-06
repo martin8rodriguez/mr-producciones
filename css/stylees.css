@@ -707,7 +707,7 @@ footer {
   background-image: url(../images/index/arrebato.jpg); }
 
 .multimedia__boxParte1 {
-  background-image: url(../audio/Partituras/CantarParte.png);
+  background-image: url(../images/index/CantarParte.png);
   height: 200px;
   background-size: cover; }
   .multimedia__boxParte1:hover {
@@ -719,7 +719,7 @@ footer {
       display: none; }
 
 .multimedia__boxParte2 {
-  background-image: url(../audio/Partituras/feParte.png);
+  background-image: url(../images/index/feParte.png);
   height: 200px;
   background-size: cover; }
   .multimedia__boxParte2:hover {
@@ -731,7 +731,7 @@ footer {
       display: none; }
 
 .multimedia__boxParte3 {
-  background-image: url(../audio/Partituras/VocacionParte.png);
+  background-image: url(../images/index/VocacionParte.png);
   height: 200px;
   background-size: cover; }
   .multimedia__boxParte3:hover {
