@@ -669,6 +669,10 @@ footer {
 .multimedia__boxProduccion4 {
   background-image: url(../images/index/sol.jpg); }
 
+.multimedia__boxbeat1 {
+  background-image: url(../images/index/servicios_midi.jpg);
+  filter: grayscale(1); }
+
 .multimedia__boxbeat2 {
   background-image: url(../images/index/flor.jpg); }
 
@@ -715,7 +719,7 @@ footer {
       display: none; }
 
 .multimedia__boxParte2 {
-  background-image: url(../../audio/Partituras/feParte.png);
+  background-image: url(../audio/Partituras/feParte.png);
   height: 200px;
   background-size: cover; }
   .multimedia__boxParte2:hover {
@@ -727,7 +731,7 @@ footer {
       display: none; }
 
 .multimedia__boxParte3 {
-  background-image: url(../../audio/Partituras/VocacionParte.png);
+  background-image: url(../audio/Partituras/VocacionParte.png);
   height: 200px;
   background-size: cover; }
   .multimedia__boxParte3:hover {

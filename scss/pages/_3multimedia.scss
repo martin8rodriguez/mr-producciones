@@ -133,8 +133,9 @@
 
 .multimedia__boxbeat1{
     @extend .multimedia__boxProduccion;
+    background-image: url(../images/index/servicios_midi.jpg);
+    filter: grayscale(1);
     
-
 }
 
 .multimedia__boxbeat2{
@@ -218,7 +219,7 @@
 
 .multimedia__boxParte2{
     @extend .multimedia__boxProduccion;
-    background-image: url(../../audio/Partituras/feParte.png);
+    background-image: url(../audio/Partituras/feParte.png);
     height: 200px;
     background-size: cover;
     
@@ -236,7 +237,7 @@
 
 .multimedia__boxParte3{
     @extend .multimedia__boxProduccion;
-    background-image: url(../../audio/Partituras/VocacionParte.png);
+    background-image: url(../audio/Partituras/VocacionParte.png);
     height: 200px;
     background-size: cover;
         &:hover {
