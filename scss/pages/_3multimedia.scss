@@ -217,23 +217,23 @@
 
 }
 
-.multimedia__boxParte2{
-    @extend .multimedia__boxProduccion;
-    background-image: url(../images/index/feParte.png);
-    height: 200px;
-    background-size: cover;
+// .multimedia__boxParte2{
+//     @extend .multimedia__boxProduccion;
+//     background-image: url(../images/index/feParte.png);
+//     height: 200px;
+//     background-size: cover;
     
         
-        &:hover {
-            width: 50%;
-            height: 400px;
-            background-attachment: scroll;
-            transition: 0.3s;
-                ul li{
-                    display: none;
-                }
-        }
-}
+//         &:hover {
+//             width: 50%;
+//             height: 400px;
+//             background-attachment: scroll;
+//             transition: 0.3s;
+//                 ul li{
+//                     display: none;
+//                 }
+//         }
+// }
 
 .multimedia__boxParte3{
     @extend .multimedia__boxProduccion;

@@ -630,7 +630,7 @@ footer {
   justify-content: space-evenly;
   background-color: black; }
 
-.multimedia__boxProduccion, .multimedia__boxProduccion1, .multimedia__boxProduccion2, .multimedia__boxProduccion3, .multimedia__boxProduccion4, .multimedia__boxbeat1, .multimedia__boxbeat2, .multimedia__boxbeat3, .multimedia__boxMezcla1, .multimedia__boxMezcla2, .multimedia__boxMezcla3, .multimedia__boxPista1, .multimedia__boxPista2, .multimedia__boxPista3, .multimedia__boxCompo1, .multimedia__boxCompo2, .multimedia__boxCompo3, .multimedia__boxParte1, .multimedia__boxParte2, .multimedia__boxParte3 {
+.multimedia__boxProduccion, .multimedia__boxProduccion1, .multimedia__boxProduccion2, .multimedia__boxProduccion3, .multimedia__boxProduccion4, .multimedia__boxbeat1, .multimedia__boxbeat2, .multimedia__boxbeat3, .multimedia__boxMezcla1, .multimedia__boxMezcla2, .multimedia__boxMezcla3, .multimedia__boxPista1, .multimedia__boxPista2, .multimedia__boxPista3, .multimedia__boxCompo1, .multimedia__boxCompo2, .multimedia__boxCompo3, .multimedia__boxParte1, .multimedia__boxParte3 {
   height: 100%;
   width: 300px;
   margin: 20px;
@@ -644,10 +644,10 @@ footer {
   align-items: center;
   background-image: url(../../images/index/servicio_prod.jpg);
   background-size: cover; }
-  .multimedia__boxProduccion ul, .multimedia__boxProduccion1 ul, .multimedia__boxProduccion2 ul, .multimedia__boxProduccion3 ul, .multimedia__boxProduccion4 ul, .multimedia__boxbeat1 ul, .multimedia__boxbeat2 ul, .multimedia__boxbeat3 ul, .multimedia__boxMezcla1 ul, .multimedia__boxMezcla2 ul, .multimedia__boxMezcla3 ul, .multimedia__boxPista1 ul, .multimedia__boxPista2 ul, .multimedia__boxPista3 ul, .multimedia__boxCompo1 ul, .multimedia__boxCompo2 ul, .multimedia__boxCompo3 ul, .multimedia__boxParte1 ul, .multimedia__boxParte2 ul, .multimedia__boxParte3 ul {
+  .multimedia__boxProduccion ul, .multimedia__boxProduccion1 ul, .multimedia__boxProduccion2 ul, .multimedia__boxProduccion3 ul, .multimedia__boxProduccion4 ul, .multimedia__boxbeat1 ul, .multimedia__boxbeat2 ul, .multimedia__boxbeat3 ul, .multimedia__boxMezcla1 ul, .multimedia__boxMezcla2 ul, .multimedia__boxMezcla3 ul, .multimedia__boxPista1 ul, .multimedia__boxPista2 ul, .multimedia__boxPista3 ul, .multimedia__boxCompo1 ul, .multimedia__boxCompo2 ul, .multimedia__boxCompo3 ul, .multimedia__boxParte1 ul, .multimedia__boxParte3 ul {
     width: 100%;
     margin: 10px; }
-    .multimedia__boxProduccion ul li, .multimedia__boxProduccion1 ul li, .multimedia__boxProduccion2 ul li, .multimedia__boxProduccion3 ul li, .multimedia__boxProduccion4 ul li, .multimedia__boxbeat1 ul li, .multimedia__boxbeat2 ul li, .multimedia__boxbeat3 ul li, .multimedia__boxMezcla1 ul li, .multimedia__boxMezcla2 ul li, .multimedia__boxMezcla3 ul li, .multimedia__boxPista1 ul li, .multimedia__boxPista2 ul li, .multimedia__boxPista3 ul li, .multimedia__boxCompo1 ul li, .multimedia__boxCompo2 ul li, .multimedia__boxCompo3 ul li, .multimedia__boxParte1 ul li, .multimedia__boxParte2 ul li, .multimedia__boxParte3 ul li {
+    .multimedia__boxProduccion ul li, .multimedia__boxProduccion1 ul li, .multimedia__boxProduccion2 ul li, .multimedia__boxProduccion3 ul li, .multimedia__boxProduccion4 ul li, .multimedia__boxbeat1 ul li, .multimedia__boxbeat2 ul li, .multimedia__boxbeat3 ul li, .multimedia__boxMezcla1 ul li, .multimedia__boxMezcla2 ul li, .multimedia__boxMezcla3 ul li, .multimedia__boxPista1 ul li, .multimedia__boxPista2 ul li, .multimedia__boxPista3 ul li, .multimedia__boxCompo1 ul li, .multimedia__boxCompo2 ul li, .multimedia__boxCompo3 ul li, .multimedia__boxParte1 ul li, .multimedia__boxParte3 ul li {
       width: 100%;
       color: white;
       font-size: 2rem;
@@ -716,18 +716,6 @@ footer {
     background-attachment: scroll;
     transition: 0.3s; }
     .multimedia__boxParte1:hover ul li {
-      display: none; }
-
-.multimedia__boxParte2 {
-  background-image: url(../images/index/feParte.png);
-  height: 200px;
-  background-size: cover; }
-  .multimedia__boxParte2:hover {
-    width: 50%;
-    height: 400px;
-    background-attachment: scroll;
-    transition: 0.3s; }
-    .multimedia__boxParte2:hover ul li {
       display: none; }
 
 .multimedia__boxParte3 {
