@@ -658,52 +658,52 @@ footer {
       text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; }
 
 .multimedia__boxProduccion1 {
-  background-image: url(../../images/index/arrebato.jpg); }
+  background-image: url(../images/index/arrebato.jpg); }
 
 .multimedia__boxProduccion2 {
-  background-image: url(../../images/index/monstruos.bmp); }
+  background-image: url(../images/index/monstruos.bmp); }
 
 .multimedia__boxProduccion3 {
-  background-image: url(../../images/index/bela.jpg); }
+  background-image: url(../images/index/bela.jpg); }
 
 .multimedia__boxProduccion4 {
-  background-image: url(../../images/index/sol.jpg); }
+  background-image: url(../images/index/sol.jpg); }
 
 .multimedia__boxbeat2 {
-  background-image: url(../../images/index/flor.jpg); }
+  background-image: url(../images/index/flor.jpg); }
 
 .multimedia__boxbeat3 {
-  background-image: url(../../images/index/arrebato.jpg); }
+  background-image: url(../images/index/arrebato.jpg); }
 
 .multimedia__boxMezcla1 {
-  background-image: url(../../images/index/trova.jfif); }
+  background-image: url(../images/index/trova.jfif); }
 
 .multimedia__boxMezcla2 {
-  background-image: url(../../images/index/arza.jfif); }
+  background-image: url(../images/index/arza.jfif); }
 
 .multimedia__boxMezcla3 {
-  background-image: url(../../images/index/vander2.jpg); }
+  background-image: url(../images/index/vander2.jpg); }
 
 .multimedia__boxPista1 {
-  background-image: url(../../images/index/school.jpg); }
+  background-image: url(../images/index/school.jpg); }
 
 .multimedia__boxPista2 {
-  background-image: url(../../images/index/fun.jpg); }
+  background-image: url(../images/index/fun.jpg); }
 
 .multimedia__boxPista3 {
-  background-image: url(../../images/index/jorobado.png); }
+  background-image: url(../images/index/jorobado.png); }
 
 .multimedia__boxCompo1 {
-  background-image: url(../../images/index/monstruos.bmp); }
+  background-image: url(../images/index/monstruos.bmp); }
 
 .multimedia__boxCompo2 {
-  background-image: url(../../images/index/arrebato.jpg); }
+  background-image: url(../images/index/arrebato.jpg); }
 
 .multimedia__boxCompo3 {
-  background-image: url(../../images/index/arrebato.jpg); }
+  background-image: url(../images/index/arrebato.jpg); }
 
 .multimedia__boxParte1 {
-  background-image: url(../../audio/Partituras/CantarParte.png);
+  background-image: url(../audio/Partituras/CantarParte.png);
   height: 200px;
   background-size: cover; }
   .multimedia__boxParte1:hover {
